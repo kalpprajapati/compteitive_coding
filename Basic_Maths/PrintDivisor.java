@@ -21,6 +21,8 @@ class Solution {
         List<Integer> res = new ArrayList<>();
 
         // Loop from 1 to square root of N
+         //6*6 <= 36 true;
+         //7*7 <= 36 false so it is same ad square root of n
         for (int i = 1; i * i <= N; i++) {
             if (N % i == 0) {
                 
@@ -62,4 +64,5 @@ public class PrintDivisor{
         }
         System.out.println();
     }
+
 }
